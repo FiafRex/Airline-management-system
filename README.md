@@ -5,7 +5,7 @@ Before proceeding further with this project-kindly ensure that you ahve the foll
 • 2GB RAM or more
 • Keyboard
 • Mouse
-• Working monito
+• Working monitor
 
 **S/W specifications**
 • JDK 7 or higher
@@ -15,6 +15,7 @@ Before proceeding further with this project-kindly ensure that you ahve the foll
 • .JAVA Functionality
 • Operating system that can run the above
 • JDateChooser installed
+(Online database)
 
 **Architecture (dfd)-Modules **
 The modules used in this project are:
