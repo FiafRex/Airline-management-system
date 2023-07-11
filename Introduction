@@ -1,0 +1,107 @@
+# Airline-management-system
+Building an Airline Management System (UI) using JavaFX (SceneBuilder 2) (using JDK 7 or higher)
+
+(AIM):
+Intoday’s day and age-everyone’s a budding traveller! At the press of a 
+button, you can book a flight while at the press of another button you can book 
+a hotel…but, have you ever wondered what’s behind the scenes?
+Behind the well-designed, optimised websites lies a series of cold, downright 
+dreadful-lines of code, that would be reason to panic for any layman without 
+the knowledge of coding. However, it’s because of this code that the website 
+runs…that you can book your flight and board it correctly, with little to no 
+intervention from your end.
+As such, the main aim behind my project is to design such an application. This 
+application is not intended for the customers (because there already are a 
+couple thousand of them, designed and being implemented as we speak) but 
+rather for the admins-for the true heroes behind the airlines ticket booking 
+system. This application has been optimised to avoid errors while being flexible 
+enough to allow updation, insertion, cancellation of flights/tickets and creation 
+and updation of customer details
+
+(INTRODUCTION)
+The application starts off with a simple login screen-asking the user to enter the 
+username and password. The application then checks if the entered details are 
+valid or not (the details are checked with those, entered in a database prior). If 
+the details match-the user is taken straight to the main home page and a 
+“logged in successfully!” popup is displayed. If not, then a “invalid username or 
+password” is displayed or “Please fill out both fields” if either of the fields is left 
+empty. 
+In case the user wants to create an account to log in-the ‘create account’ 
+button, below the ‘login’ button; does just that. On clicking this, a pane pops up 
+to the right of the ‘login’ pane. This pane contains an auto generated ‘USER ID’ 
+and prompts the user to enter his/her first name, last name, username and 
+password. On clicking the add button, the details are added to the database, if 
+they are correct. Should the user enter numbers in the fields for first name 
+and/or last name or leave out any field-an appropriate error message is 
+displayed and the user has to correct the fields.
+Once the user successfully logs in, he/she has access to the entire application. 
+From here the user has the following choices
+1-Clicking on the ‘Flights’ tab will bring up two options
+1A- If the user clicks on the ‘Add Flight’ option, the user has to fill out the fields 
+for adding a flight to the database. The flight is automatically allocated an ID 
+by the application and stored in the database. The details won’t be entered in 
+the database if any of the fields are empty. The user will know if the details 
+have been successfully because a “Flight created!” pop-up will be displayed. If 
+the user leaves out any field/keeps the source and destination same/enters 
+alphabets in the flight charge field, an appropriate error message is displayed.
+1B-If the user clicks on the ‘Update Flight’ option, the user has to enter the ID of 
+the flight to be updated. Once he/she does so, the application checks the 
+4
+database for the flight ID and if found, auto enters the details in the empty 
+fields (same as those in the Add Flight screen, but this time, the application 
+auto-fills them). The user can then choose to change the details of any of the 
+fields apart from the ‘source’ and ‘destination’ fields (an international flight 
+cannot be redirected on whim). Once the update button is pressed, the details 
+are updated accordingly. If the relevant flight ID is not found in the database, 
+an error message is displayed accordingly.
+2-Clicking on the ‘tickets’ tab will bring up two options
+2A-Clicking on the ‘manage tickets’ button will display the ticket booking 
+screen. Here the user simply has to choose the Source and Destination from a 
+drop-down box; upon doing this, the number of flights and some details about 
+them are displayed in a table below. If the flight is ‘cancelled’ a warning will be 
+displayed before allowing the user to process the tickets. Further in order to 
+book the ticket for the customer-the user simply has to enter the customer id in 
+the relevant text field and the details of the customer will be displayed. Upon 
+clicking on the table row containing the desired flight, the details of said flight 
+are filled in the empty text fields for the ticket that are to be entered in the 
+database. A ticket ID is also generated for the ticket and stored. The user simply 
+has to choose the date, class and the number of seats-according to which the 
+final total fare is displayed.
+2B-Clicking on the ‘view booked flights’ option will simply display the details of 
+all the tickets booked after retrieving said details from the database.
+3-Clicking on the ‘Passenger’ tab will bring up two options
+3A-Clicking on the ‘Create Passenger ID’ tab will prompt the user to fill out the 
+details of a passenger. The passenger is allocated an ID given by the application 
+automatically. Apart from that the user is supposed to fill out the first name, 
+last name, address, email address, contact details, gender, date of birth and 
+passport number of the passenger. If the first name/last name contain numbers
+an error message is displayed and the fields are cleared. If the contact no. 
+contains less than 10 digits or any character apart from numbers, an error 
+5
+message is displayed and the contact field is cleared, prompting the user to 
+enter the details again.
+3B-If the user clicks on the ‘Search Manifesto’ button-the application scans 
+through the database for the passenger ID, entered by the user. If found, the 
+user is allowed to update any/all fields (with the same rules as the ones in 
+‘Create Passenger ID’). If not found, an error message is displayed.
+4-Finally on clicking the ‘log-out’ button-the user is logged out and returned to 
+the login screen—the main page closes—and the message ‘You have been 
+logged out’ is displayed.
+
+
+(H/W Specifications)
+• Working Computer
+• 2GB RAM or more
+• Keyboard
+• Mouse
+• Working monitor
+
+(S/W Specifications)
+• JDK 7 or higher
+• NETBEANS IDE 8.02 or similar
+• Scene builder 2
+• JAVA FX Plugin 
+• .JAVA Functionality
+• Operating system that can run the above
+• JDateChooser installed
+
